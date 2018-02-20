@@ -127,6 +127,7 @@ public class A_Initial_Request
 	  System.out.println(alert.getText());
 	  alert.accept();
 	  driver.close();
+	  //Close
   }
   
 }
