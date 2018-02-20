@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="88376" started-at="2018-02-16T12:23:48Z" finished-at="2018-02-16T12:25:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="88376" started-at="2018-02-16T12:23:48Z" finished-at="2018-02-16T12:25:16Z">
+      <class name="package_Shipping_Instructions.C_Origin_Approver">
+        <test-method status="PASS" signature="Verify_Login()[pri:1, instance:package_Shipping_Instructions.C_Origin_Approver@b97c004]" name="Verify_Login" duration-ms="24251" started-at="2018-02-16T17:53:48Z" finished-at="2018-02-16T17:54:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login -->
+        <test-method status="PASS" signature="Origin_Approver()[pri:2, instance:package_Shipping_Instructions.C_Origin_Approver@b97c004]" name="Origin_Approver" duration-ms="64098" started-at="2018-02-16T17:54:12Z" finished-at="2018-02-16T17:55:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Origin_Approver -->
+      </class> <!-- package_Shipping_Instructions.C_Origin_Approver -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
