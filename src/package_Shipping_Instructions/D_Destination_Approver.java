@@ -25,20 +25,18 @@ public class D_Destination_Approver
 	  }
 	  
 	  @Test(priority = 2)
-	  public void Destination_Approver() throws InterruptedException
+	  public void Destination_Approver() 
 	  {
+		  // Implicitly wait for 10 seconds
+		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  // Upon login click on Shipping Instructions tab in the home page
-		  driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		  driver.findElement(By.xpath("//input[@title='Shipping Instructions']")).click();
 		  // Click on the Dashboard View tab
 		  driver.findElement(By.xpath("//a[@id='ctl00_UserMenu_aDBView']")).click();
-		  Thread.sleep(10000);
 		  // Click on Edit button of the Request that is successfully submitted for approval
 		  driver.findElement(By.xpath("//img[@id='ctl00_MainContent_gvDashBoard_cell0_9_btnEditImg']")).click();
-		  Thread.sleep(10000);
 		  // Click on APprove button in the "Involved Parties" layer
 		  driver.findElement(By.xpath("//span[@class = 'dx-vam' and text() = 'Approve']")).click();
-		  Thread.sleep(10000);
 		  // Enter comments 
 		  driver.findElement(By.xpath("//textarea[@id='ctl00_MainContent_RevisionPopup_RevisionPopupPanel_memRevisionComments']")).sendKeys("Test Comments - Destination");
 		  // CLick on Save
